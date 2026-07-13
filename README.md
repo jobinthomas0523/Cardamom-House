@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cardamom House
+
+A responsive restaurant menu page built as part of the Kwill Frontend Developer Trial Task.
+
+The application is built using Next.js 15, React 19, TypeScript, and Tailwind CSS with a focus on responsive design, accessibility, and clean component architecture.
+
+## Live Demo
+
+Vercel: https://cardamom-house-eight.vercel.app/
+
+GitHub: https://github.com/jobinthomas0523/Cardamom-House
+
+---
+
+## Features
+
+- Responsive design (Mobile, Tablet & Desktop)
+- Sticky category navigation
+- Active section highlighting while scrolling
+- Today's Special section
+- Open / Closed restaurant states
+- Sold Out special state
+- Weekly opening hours
+- Accessible semantic HTML
+- Smooth scrolling navigation
+
+---
+
+## URL States
+
+The application supports three states through query parameters:
+
+Default
+
+```
+/
+```
+
+Closed
+
+```
+/?state=closed
+```
+
+Special Sold Out
+
+```
+/?state=special-sold-out
+```
+
+---
+
+## Tech Stack
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Lucide React
+
+---
+
+## Project Structure
+
+```
+app/
+components/
+data/
+types/
+lib/
+public/
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository
+
+```bash
+git clone https://github.com/jobinthomas0523/Cardamom-House.git
+```
+
+Go into the project
+
+```bash
+cd Cardamom-House
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Design Decisions
 
-To learn more about Next.js, take a look at the following resources:
+- Used a warm amber color palette inspired by the restaurant branding.
+- Built reusable components for maintainability.
+- Implemented URL-based state management for different restaurant scenarios.
+- Focused on a mobile-first responsive layout.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
+With additional time, I would add:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Dark mode
+- Dietary filters (Vegetarian / Gluten-Free)
+- Print-friendly menu
+- Smooth animations using Motion
+- Food photography for a richer visual experience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Author
+
+**Jobin P Thomas**
+
+GitHub:
+https://github.com/jobinthomas0523
+
+LinkedIn:
+https://www.linkedin.com/in/jobin-p-thomas
