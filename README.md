@@ -1,62 +1,89 @@
-# Cardamom House
+# Cardamom House Restaurant Menu
 
-A responsive restaurant menu page built as part of the Kwill Frontend Developer Trial Task.
+A responsive restaurant menu web application built with **Next.js**, **TypeScript**, and **Tailwind CSS** as part of the Kwill Frontend Developer trial task.
 
-The application is built using Next.js 15, React 19, TypeScript, and Tailwind CSS with a focus on responsive design, accessibility, and clean component architecture.
+The application provides a modern digital menu experience with category navigation, responsive layouts, and different restaurant states such as open, closed, and special sold out.
+
+---
 
 ## Live Demo
 
-Vercel: https://cardamom-house-eight.vercel.app/
+https://cardamom-house-eight.vercel.app/
 
-GitHub: https://github.com/jobinthomas0523/Cardamom-House
+---
+
+## GitHub Repository
+
+https://github.com/jobinthomas0523/Cardamom-House
 
 ---
 
 ## Features
 
-- Responsive design (Mobile, Tablet & Desktop)
+- Responsive design for desktop, tablet, and mobile
 - Sticky category navigation
-- Active section highlighting while scrolling
-- Today's Special section
-- Open / Closed restaurant states
-- Sold Out special state
+- Active menu section highlighting while scrolling
+- Hero section with restaurant information
+- Today's Chef's Pick section
+- Dynamic restaurant states using URL query parameters
 - Weekly opening hours
-- Accessible semantic HTML
-- Smooth scrolling navigation
+- Menu grouped into categories
+- Sold Out state for menu items
+- Clean and accessible UI
+- Built using reusable React components
 
 ---
 
-## URL States
+## Supported URL States
 
-The application supports three states through query parameters:
-
-Default
+### Default (Restaurant Open)
 
 ```
 /
 ```
 
-Closed
+Displays:
+
+- Open status
+- Chef's Pick
+- Full menu
+
+---
+
+### Restaurant Closed
 
 ```
 /?state=closed
 ```
 
-Special Sold Out
+Displays:
+
+- Closed badge
+- Closed information banner
+- Next opening message
+
+---
+
+### Today's Special Sold Out
 
 ```
 /?state=special-sold-out
 ```
+
+Displays:
+
+- Chef's Pick marked as Sold Out
+- Corresponding menu item marked as unavailable
 
 ---
 
 ## Tech Stack
 
 - Next.js 15 (App Router)
-- React 19
+- React
 - TypeScript
-- Tailwind CSS v4
-- Lucide React
+- Tailwind CSS
+- Lucide React Icons
 
 ---
 
@@ -67,13 +94,22 @@ app/
 components/
 data/
 types/
-lib/
 public/
 ```
 
+Main reusable components include:
+
+- Hero
+- StickyNav
+- MenuSection
+- MenuItem
+- TodaySpecial
+- StatusBanner
+- Footer
+
 ---
 
-## Getting Started
+## Installation
 
 Clone the repository
 
@@ -81,7 +117,7 @@ Clone the repository
 git clone https://github.com/jobinthomas0523/Cardamom-House.git
 ```
 
-Go into the project
+Navigate into the project
 
 ```bash
 cd Cardamom-House
@@ -99,7 +135,7 @@ Run the development server
 npm run dev
 ```
 
-Open:
+Open
 
 ```
 http://localhost:3000
@@ -109,22 +145,20 @@ http://localhost:3000
 
 ## Design Decisions
 
-- Used a warm amber color palette inspired by the restaurant branding.
-- Built reusable components for maintainability.
-- Implemented URL-based state management for different restaurant scenarios.
-- Focused on a mobile-first responsive layout.
+- Used reusable components to keep the codebase modular.
+- Stored menu data separately for easier maintenance.
+- Implemented restaurant states using URL query parameters to simulate different real-world scenarios.
+- Used Tailwind CSS for rapid styling and responsive layouts.
 
 ---
 
 ## Future Improvements
 
-With additional time, I would add:
-
-- Dark mode
-- Dietary filters (Vegetarian / Gluten-Free)
-- Print-friendly menu
-- Smooth animations using Motion
-- Food photography for a richer visual experience
+- Dark mode support
+- Search and filter menu items
+- Online ordering integration
+- Multi-language support
+- Animations for menu interactions
 
 ---
 
